@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dictionary Vista
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/image2\ \(1\).jpg");
+  min-height: 100%;
+}
+
+.bgimg-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* black overlay with 50% opacity */
+    
+}
+
+footer {
+      background-color: #f1f1f1;
+      padding: 32px 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">Dictionary Vista</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="About.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="Contact.html" class="w3-bar-item w3-button"> CONTACT</a>
+      <a href="privacy.html" class="w3-bar-item w3-button"> PRIVACY POLICY</a>
+      <a href="terms.html" class="w3-bar-item w3-button"> TERMS & CONDITIONS</a>
+    
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="About.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="privacy.html" onclick="w3_close()" class="w3-bar-item w3-button">PRIVACY POLICY</a>
+  <a href="terms.html" onclick="w3_close()" class="w3-bar-item w3-button">TERMS & CONDITIONS</a>
+
+</nav>
+
+<!-- Redesigned Header with split layout -->
+<header class="w3-row w3-container w3-padding-64 w3-light-grey" id="home" style="min-height:100vh; display: flex; align-items: center;">
+  <!-- Left Column: Text -->
+  <div class="w3-col l6 m12 w3-padding-large">
+    <h1 class="w3-jumbo">Your Daily Dose of Vocabulary</h1>
+    <p class="w3-xlarge w3-text-dark-grey">Expand your mind with words.</p>
+    <p class="w3-large">Explore, understand, and define with ease through Dictionary Vista. Dive into definitions, concepts, and explanations that are crystal-clear and memorable.</p>
+    <a href="About.html" class="w3-button w3-blue w3-round-large w3-padding-large w3-margin-top w3-hover-opacity">Discover the Power of Words</a>
+  </div>
+
+  <!-- Right Column: Image -->
+  <div class="w3-col l6 m12 w3-center w3-padding-large">
+    <img src="image2 (1).jpg" alt="Explore Vocabulary" style="max-width:100%; border-radius: 16px;">
+  </div>
+</header>
+
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px; background-color: #f8f8f8;" id="about">
+  <h3 class="w3-center" style="font-weight: 600; letter-spacing: 2px;">ABOUT US</h3>
+  <p class="w3-center w3-large" style="color: #555;">Why DefineItNow stands apart</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    
+    <div class="w3-quarter">
+      <div class="w3-card-4 w3-padding-32 w3-white w3-hover-shadow" style="border-radius: 12px;">
+        <i class="fa fa-desktop w3-jumbo w3-text-indigo"></i>
+        <p class="w3-xlarge" style="margin-top:16px;">Seamless Access</p>
+        <p style="color: #666;">Our responsive design lets you explore language easily on any device, anywhere.</p>
+      </div>
+    </div>
+    
+    <div class="w3-quarter">
+      <div class="w3-card-4 w3-padding-32 w3-white w3-hover-shadow" style="border-radius: 12px;">
+        <i class="fa fa-heart w3-jumbo w3-text-red"></i>
+        <p class="w3-xlarge" style="margin-top:16px;">Language-Led Passion</p>
+        <p style="color: #666;">We’re fueled by a love for language — every word is handpicked to empower your journey.</p>
+      </div>
+    </div>
+    
+    <div class="w3-quarter">
+      <div class="w3-card-4 w3-padding-32 w3-white w3-hover-shadow" style="border-radius: 12px;">
+        <i class="fa fa-diamond w3-jumbo w3-text-teal"></i>
+        <p class="w3-xlarge" style="margin-top:16px;">Minimal & Modern</p>
+        <p style="color: #666;">A sleek, distraction-free interface that helps you focus on what matters most — learning.</p>
+      </div>
+    </div>
+    
+    <div class="w3-quarter">
+      <div class="w3-card-4 w3-padding-32 w3-white w3-hover-shadow" style="border-radius: 12px;">
+        <i class="fa fa-cog w3-jumbo w3-text-orange"></i>
+        <p class="w3-xlarge" style="margin-top:16px;">Intelligent Tools</p>
+        <p style="color: #666;">With smart definitions, examples, and synonyms — your vocabulary gets sharper every day.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  
+
+<!-- Promo Section - "We know words" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We Speak Vocabulary Fluently</h3>
+      <p>At <strong>Dictionary Vista</strong>, language isn't just studied — it's celebrated. Our platform is built for learners, thinkers, and creators who crave clarity and depth in every word.</p>
+      <hr style="border-top: 1px solid #bbb; margin: 20px 0;">
+      <p>With dynamic definitions, real-life usage, etymology, and advanced synonyms, we don’t just define — we elevate your understanding. Explore words like never before in a space designed for focused discovery.</p>
+      <hr style="border-top: 1px solid #bbb; margin: 20px 0;">
+      <p><strong>Dictionary Vista</strong> evolves with language. From trending terms to timeless classics, our content is updated regularly to reflect how people really speak and write today.</p>
+      <hr style="border-top: 1px solid #bbb; margin: 20px 0;">
+      <p>No matter your goal — acing an exam, refining your writing, or simply expanding your knowledge — <strong>Dictionary Vista</strong> is your companion in mastering words with meaning and style.</p>
+      <p><a href="About.html" class="w3-button w3-black"> Discover More</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="image3 (1).jpg" alt="Dictionary" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+
+  
+  
+  
+
+<!-- Power of Words Section - Dictionary Vista -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE POWER OF WORDS</h3>
+  <p class="w3-center w3-large">What sets Dictionary Vista apart in the world of language</p>
+
+  <!-- First Row: Two Smaller Cards -->
+  <div class="w3-row-padding w3-margin-top w3-center w3-content" style="max-width:1200px; margin:auto;">
+
+    <div class="w3-col l5 m6 w3-margin-bottom" style="margin-left:4.5%">
+      <div class="w3-card-4 w3-white w3-hover-shadow" style="border-radius: 12px; overflow: hidden;">
+        <img src="image7.jpg" alt="Clarity First" style="width:100%">
+        <div class="w3-container w3-padding">
+          <h3>Clarity First</h3>
+          <p class="w3-text-grey">Precise Definitions</p>
+          <p>Every word you search delivers a clear, concise, and user-friendly definition—so you never feel lost in jargon. The design makes everything easy. Learn with clarity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l5 m6 w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-hover-shadow" style="border-radius: 12px; overflow: hidden;">
+        <img src="image8.jpg" alt="Roots & Stories" style="width:100%">
+        <div class="w3-container w3-padding">
+          <h3>Roots & Stories</h3>
+          <p class="w3-text-grey">Etymology Explained</p>
+          <p>Trace each word’s fascinating journey—from ancient origins to modern-day meaning. Discover the story that shaped the sound. With words that matter.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Divider -->
+  <div class="w3-row">
+    <div class="w3-col l12">
+      <hr style="border-top: 1px solid #ccc; margin: 48px 0;">
+    </div>
+  </div>
+
+  <!-- Second Row: Two Smaller Cards -->
+  <div class="w3-row-padding w3-center w3-content" style="max-width:1200px; margin:auto;">
+
+    <div class="w3-col l5 m6 w3-margin-bottom" style="margin-left:4.5%">
+      <div class="w3-card-4 w3-white w3-hover-shadow" style="border-radius: 12px; overflow: hidden;">
+        <img src="image9.jpg" alt="Word Power" style="width:100%">
+        <div class="w3-container w3-padding">
+          <h3>Word Power</h3>
+          <p class="w3-text-grey">Synonyms Made Simple</p>
+          <p>From subtle shades of meaning to sharp contrasts — our curated synonyms and antonyms empower smarter expression.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l5 m6 w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-hover-shadow" style="border-radius: 12px; overflow: hidden;">
+        <img src="image10.jpg" alt="Sound it Out" style="width:100%">
+        <div class="w3-container w3-padding">
+          <h3>Sound it Out</h3>
+          <p class="w3-text-grey">Audio Pronunciations</p>
+          <p>Not sure how to pronounce it? Listen to crystal-clear audio and speak with confidence in any conversation.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  
+  
+
+<!-- Redesigned Promo Section - Dictionary Vista Stats -->
+<div class="w3-container w3-light-grey" style="padding:96px 16px">
+  <h3 class="w3-center">DICTIONARY VISTA IN NUMBERS</h3>
+  <p class="w3-center w3-large">Explore the scale and impact of our linguistic journey</p>
+
+  <div class="w3-row-padding w3-margin-top w3-center" style="max-width:1200px; margin:auto;">
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 14px;">
+        <i class="fa fa-book w3-text-indigo" style="font-size:48px;"></i>
+        <h4 class="w3-margin-top">12,000+</h4>
+        <p class="w3-text-grey">Words Clearly Defined</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 14px;">
+        <i class="fa fa-plus-circle w3-text-teal" style="font-size:48px;"></i>
+        <h4 class="w3-margin-top">1,500+</h4>
+        <p class="w3-text-grey">Fresh Entries This Month</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 14px;">
+        <i class="fa fa-users w3-text-deep-orange" style="font-size:48px;"></i>
+        <h4 class="w3-margin-top">10,000+</h4>
+        <p class="w3-text-grey">Active Global Users</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 14px;">
+        <i class="fa fa-search w3-text-green" style="font-size:48px;"></i>
+        <h4 class="w3-margin-top">300+</h4>
+        <p class="w3-text-grey">Searches Per Day</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 14px;">
+        <i class="fa fa-graduation-cap w3-text-purple" style="font-size:48px;"></i>
+        <h4 class="w3-margin-top">850+</h4>
+        <p class="w3-text-grey">Schools Using Vista</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 14px;">
+        <i class="fa fa-globe w3-text-blue-grey" style="font-size:48px;"></i>
+        <h4 class="w3-margin-top">42</h4>
+        <p class="w3-text-grey">Countries Reached</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Redesigned Features Spotlight Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="why">
+  <h3 class="w3-center">WHY CHOOSE DEFINEITNOW?</h3>
+  <p class="w3-center w3-large">Not just a dictionary — your gateway to word mastery</p>
+
+  <div class="w3-row-padding w3-margin-top" style="max-width:1200px; margin:auto;">
+    <div class="w3-col l6 m12">
+      <div class="w3-card-4 w3-white w3-padding-large" style="border-radius: 12px;">
+        <h4><i class="fa fa-magic w3-text-indigo"></i> Instant Smart Definitions</h4>
+        <p style="text-align: justify;">Skip the fluff — get crisp, AI-refined definitions with real-life usage, simplified explanations, and layered meanings for clarity.</p>
+
+        <h4><i class="fa fa-lightbulb-o w3-text-yellow"></i> Vocabulary That Sticks</h4>
+        <p style="text-align: justify;">Built-in learning tools like flashcards, daily challenges, and quizlets help you retain and apply new words in your everyday writing and speech.</p>
+
+        <h4><i class="fa fa-rocket w3-text-red"></i> For Learners, Writers & Pros</h4>
+        <p style="text-align: justify;">Whether you’re studying for IELTS, crafting content, or mastering academic writing — DefineItNow adapts to your linguistic level and goal.</p>
+      </div>
+    </div>
+
+    <div class="w3-col l6 m12 w3-padding-large">
+      <img src="image4 (1).jpg" alt="DefineItNow App Preview" style="width:100%; border-radius: 14px;">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-margin-top w3-center" style="margin-top:64px">
+    <div class="w3-col l4 m12">
+      <div class="w3-card-2 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 10px;">
+        <i class="fa fa-volume-up w3-text-green" style="font-size:40px;"></i>
+        <h5 class="w3-margin-top">Audio Pronunciations</h5>
+        <p class="w3-text-grey">Listen and speak accurately with native-style pronunciation guides for every word — formal, casual, or technical.</p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m12">
+      <div class="w3-card-2 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 10px;">
+        <i class="fa fa-bookmark w3-text-purple" style="font-size:40px;"></i>
+        <h5 class="w3-margin-top">Personalized Word Bank</h5>
+        <p class="w3-text-grey">Save, organize, and revisit your favorite words with your own personal word vault — track your learning journey effortlessly.</p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m12">
+      <div class="w3-card-2 w3-white w3-padding-32 w3-hover-shadow" style="border-radius: 10px;">
+        <i class="fa fa-random w3-text-teal" style="font-size:40px;"></i>
+        <h5 class="w3-margin-top">Explore Contexts</h5>
+        <p class="w3-text-grey">Understand how words work in formal writing, casual chats, journalism, and more — no more awkward misuses!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Enhanced Skills Section -->
+<div class="w3-container w3-light-grey" style="padding:96px 16px">
+  <div class="w3-row-padding" style="max-width:1200px; margin:auto;">
+    
+    <!-- Text Block -->
+    <div class="w3-col l6 m12 w3-padding-large">
+      <h3 class="w3-xlarge">Our Core Strengths</h3>
+      <p style="text-align: justify;">
+        DefineItNow is engineered with linguistic intelligence and an intuitive design philosophy. Our platform empowers users with command over vocabulary, grammar, usage, and contextual meaning.
+      </p>
+      <p style="text-align: justify;">
+        Whether you're preparing for exams, refining your professional communication, or expanding your everyday word power — DefineItNow makes language learning seamless, practical, and fun.
+      </p>
+    </div>
+
+    <!-- Skills Bar Block -->
+    <div class="w3-col l6 m12 w3-padding-large">
+      <p class="w3-wide"><i class="fa fa-book w3-text-indigo w3-margin-right"></i>Word Definitions</p>
+      <div class="w3-grey w3-round">
+        <div class="w3-container w3-indigo w3-round w3-center" style="width:95%">95%</div>
+      </div>
+      
+      <p class="w3-wide"><i class="fa fa-language w3-text-teal w3-margin-right"></i>Grammar & Usage</p>
+      <div class="w3-grey w3-round">
+        <div class="w3-container w3-teal w3-round w3-center" style="width:90%">90%</div>
+      </div>
+      
+      <p class="w3-wide"><i class="fa fa-lightbulb-o w3-text-yellow w3-margin-right"></i>Synonyms & Context</p>
+      <div class="w3-grey w3-round">
+        <div class="w3-container w3-yellow w3-text-black w3-round w3-center" style="width:88%">88%</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Enhanced Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:96px 16px" id="contact">
+  <div class="w3-content" style="max-width:1200px">
+    <h3 class="w3-center w3-xxlarge">Get in Touch</h3>
+    <p class="w3-center w3-large">Have a question or suggestion? We'd love to hear from you.</p>
+
+    <div class="w3-row-padding w3-margin-top">
+      
+      <!-- Contact Info -->
+      <div class="w3-col l5 m12 w3-padding-large">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right w3-text-red"></i> Chicago, US</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right w3-text-blue"></i> +00 151515</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right w3-text-green"></i> mail@mail.com</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="w3-col l7 m12 w3-padding-large">
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border w3-round" type="text" placeholder="Your Name" required name="Name"></p>
+          <p><input class="w3-input w3-border w3-round" type="email" placeholder="Your Email" required name="Email"></p>
+          <p><input class="w3-input w3-border w3-round" type="text" placeholder="Subject" required name="Subject"></p>
+          <p><textarea class="w3-input w3-border w3-round" placeholder="Your Message" name="Message" rows="5" required></textarea></p>
+          <p>
+            <button class="w3-button w3-black w3-round-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 DictionaryVista. All rights reserved. | Designed with ❤️ to simplify learning.
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
